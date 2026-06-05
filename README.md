@@ -121,6 +121,8 @@ Sonarr encontrem exatamente o mesmo arquivo, sem `Remote Path Mapping`.
 - Categoria de séries: `sonarr`
 - Crie usuário e senha próprios para integração.
 
+![qBittorrent com nomes e trackers ocultados](docs/assets/qbittorrent-dashboard-redacted.png)
+
 ### Radarr
 
 - Root Folder: `/mnt/movies`
@@ -166,6 +168,8 @@ conversões de vídeo; não é uma pasta de downloads.
 - Use `Full Sync` para manter as fontes sincronizadas.
 - Um `Indexer Proxy` normalmente não é necessário.
 
+![Aplicativos sincronizados no Prowlarr](docs/assets/prowlarr-applications.png)
+
 ### Seerr
 
 Integrações recomendadas:
@@ -185,6 +189,9 @@ ou gênero.
 - Use `Ignore Interval: 120` segundos para evitar registrar reproduções muito
   curtas.
 - O histórico passa a alimentar o contexto do agente.
+
+O painel do Tautulli registra estatísticas da biblioteca e histórico. Antes de
+publicar uma captura, remova nomes de usuários e revise os títulos exibidos.
 
 ## Fluxos disponíveis
 
@@ -241,7 +248,8 @@ Veja a configuração completa do agente em
 As imagens deste repositório foram capturadas da instalação real, sem senhas,
 tokens ou chaves de API. O script
 [`scripts/capture-media-docs.cjs`](scripts/capture-media-docs.cjs) captura
-somente páginas consideradas seguras:
+somente páginas consideradas seguras. A captura do qBittorrent publicada foi
+sanitizada para ocultar nomes de downloads e trackers:
 
 ```powershell
 npm install --no-save playwright

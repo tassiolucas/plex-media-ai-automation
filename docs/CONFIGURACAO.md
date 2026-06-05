@@ -58,6 +58,8 @@ Sonarr category: sonarr
 Cada aplicativo precisa de sua própria entrada de cliente de download, mesmo
 quando ambos usam o mesmo qBittorrent.
 
+![Painel sanitizado do qBittorrent](assets/qbittorrent-dashboard-redacted.png)
+
 ## 4. Radarr
 
 Em `Settings > Media Management`:
@@ -121,6 +123,8 @@ Use `Full Sync` para manter a configuração centralizada.
 Não publique chaves de API, cookies ou uma lista real de fontes. Para um
 repositório público, documente apenas que as fontes devem ser autorizadas.
 
+![Radarr e Sonarr sincronizados pelo Prowlarr](assets/prowlarr-applications.png)
+
 ## 7. Seerr
 
 Conecte Plex, Radarr e Sonarr. Para cada serviço, use o caminho que ele enxerga:
@@ -173,4 +177,3 @@ Radarr, Sonarr, Prowlarr, qBittorrent ou Tautulli diretamente para a internet.
 7. Confirme o arquivo real em `filmes/` ou `series/` no host.
 8. Atualize a biblioteca Plex e reproduza alguns minutos.
 9. Confirme o registro no Tautulli.
-

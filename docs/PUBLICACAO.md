@@ -11,6 +11,9 @@ Antes de tornar o repositório público:
 6. Não publique a lista real de fontes configuradas no Prowlarr.
 7. Confirme que exemplos usam `${SERVER_IP}`.
 8. Adicione uma licença apropriada antes de aceitar contribuições externas.
+9. Em capturas do qBittorrent, oculte nomes de downloads, hashes, trackers e
+   caminhos.
+10. Em capturas do Plex e Tautulli, revise nomes de conta, usuários e histórico.
 
 Comandos úteis:
 
