@@ -10,6 +10,26 @@ preferências e histórico, enquanto Radarr e Sonarr continuam responsáveis pel
 automação da biblioteca e o Plex continua responsável pela experiência de
 reprodução.
 
+## Dockers utilizados
+
+Esta é a stack necessária para reproduzir a esteira:
+
+| Serviço | Imagem Docker | Porta | Função |
+|---|---|---:|---|
+| [Plex](https://hub.docker.com/r/plexinc/pms-docker) | `plexinc/pms-docker` | `32400` | Biblioteca, metadados e reprodução |
+| [qBittorrent](https://docs.linuxserver.io/images/docker-qbittorrent/) | `lscr.io/linuxserver/qbittorrent` | `8081` | Realiza os downloads |
+| [Radarr](https://hub.docker.com/r/ich777/radarr) | `ghcr.io/ich777/radarr` | `7878` | Pesquisa, organiza e importa filmes |
+| [Sonarr](https://docs.linuxserver.io/images/docker-sonarr/) | `lscr.io/linuxserver/sonarr` | `8989` | Pesquisa, organiza e importa séries |
+| [Prowlarr](https://hub.docker.com/r/bitlessbyte/prowlarr) | `bitlessbyte/prowlarr` | `9898` | Centraliza e sincroniza fontes |
+| [Seerr](https://docs.seerr.dev/getting-started/docker/) | `ghcr.io/seerr-team/seerr:latest` | `5055` | Descoberta e solicitações |
+| [Tautulli](https://hub.docker.com/r/tautulli/tautulli/) | `tautulli/tautulli` | `8181` | Histórico e métricas do Plex |
+
+Além dos containers, a automação de recomendações utiliza o plugin
+**AICliAgents/Codex** do Unraid.
+
+Consulte [Imagens Docker utilizadas](docs/IMAGENS_DOCKER.md) para comandos de
+pull, mantenedores, atualização e cuidados ao trocar imagens.
+
 > Use somente fontes e conteúdos que você tenha autorização legal para acessar,
 > baixar e armazenar.
 
@@ -48,23 +68,9 @@ flowchart LR
     V --> P
 ```
 
-## Serviços
+## Acesso local
 
 Substitua `${SERVER_IP}` pelo endereço local do servidor.
-
-| Serviço | Imagem Docker usada | Porta | Papel |
-|---|---|---:|---|
-| Plex | `plexinc/pms-docker` | `32400` | Biblioteca, metadados e reprodução |
-| qBittorrent | `lscr.io/linuxserver/qbittorrent` | `8081` | Cliente de download |
-| Radarr | `ghcr.io/ich777/radarr` | `7878` | Filmes |
-| Sonarr | `lscr.io/linuxserver/sonarr` | `8989` | Séries |
-| Prowlarr | `bitlessbyte/prowlarr` | `9898` | Centralização de fontes |
-| Seerr | `ghcr.io/seerr-team/seerr:latest` | `5055` | Descoberta e solicitações |
-| Tautulli | `tautulli/tautulli` | `8181` | Histórico e métricas do Plex |
-| AICliAgents/Codex | plugin do Unraid | interno | Agente de recomendação |
-
-Links diretos, comandos de pull e observações sobre os mantenedores estão em
-[Imagens Docker utilizadas](docs/IMAGENS_DOCKER.md).
 
 URLs locais:
 
