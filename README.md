@@ -30,9 +30,6 @@ Além dos containers, a automação de recomendações utiliza o plugin
 Consulte [Imagens Docker utilizadas](docs/IMAGENS_DOCKER.md) para comandos de
 pull, mantenedores, atualização e cuidados ao trocar imagens.
 
-> Use somente fontes e conteúdos que você tenha autorização legal para acessar,
-> baixar e armazenar.
-
 ## Resultado
 
 - Filmes solicitados chegam ao Radarr, são baixados e importados para o Plex.
