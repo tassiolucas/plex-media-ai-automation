@@ -266,6 +266,26 @@ node .\scripts\capture-media-docs.cjs
 
 ## Estado atual
 
+### Plex
+
+![Biblioteca de filmes no Plex](docs/assets/plex-library.png)
+
+### qBittorrent
+
+![Downloads automatizados no qBittorrent](docs/assets/qbittorrent-dashboard-redacted.png)
+
+### Prowlarr
+
+![Integração do Prowlarr com Radarr e Sonarr](docs/assets/prowlarr-applications.png)
+
+### Radarr
+
 ![Biblioteca de filmes no Radarr](docs/assets/radarr-library.png)
 
+### Sonarr
+
 ![Biblioteca de séries no Sonarr](docs/assets/sonarr-library.png)
+
+### Tautulli
+
+![Estatísticas da biblioteca no Tautulli](docs/assets/tautulli-dashboard.png)
