@@ -63,6 +63,9 @@ Substitua `${SERVER_IP}` pelo endereço local do servidor.
 | Tautulli | `tautulli/tautulli` | `8181` | Histórico e métricas do Plex |
 | AICliAgents/Codex | plugin do Unraid | interno | Agente de recomendação |
 
+Links diretos, comandos de pull e observações sobre os mantenedores estão em
+[Imagens Docker utilizadas](docs/IMAGENS_DOCKER.md).
+
 URLs locais:
 
 ```text
@@ -238,6 +241,7 @@ Veja a configuração completa do agente em
 ## Documentação
 
 - [Configuração detalhada](docs/CONFIGURACAO.md)
+- [Imagens Docker utilizadas](docs/IMAGENS_DOCKER.md)
 - [Agente de IA e rotina semanal](docs/AGENTE_IA.md)
 - [Segurança](docs/SEGURANCA.md)
 - [Solução de problemas](docs/TROUBLESHOOTING.md)
